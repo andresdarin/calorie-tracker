@@ -1,7 +1,11 @@
+import { useReducer } from "react"
+import { activityReducer, initialState } from "./reducers/activity-reducer"
 import Form from "./components/Form"
 
 
 function App() {
+
+  const [state, dispatch] = useReducer(activityReducer, initialState) //usamos el reducer para manejar el estado de las actividades 
 
   return (
     <>
@@ -15,7 +19,10 @@ function App() {
 
       <section className="py-4">
         <div className="max-w-4xl mx-auto px-4">
-          <Form />
+          <Form
+
+            dispatch={dispatch}
+          />
         </div>
       </section>
     </>
