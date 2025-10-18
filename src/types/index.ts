@@ -3,3 +3,9 @@ export type Category = {
     name: string;
     description?: string;
 };
+
+export type Activity = {
+    category: number;
+    name: string;
+    calories: number;
+};
