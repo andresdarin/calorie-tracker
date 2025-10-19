@@ -1,6 +1,6 @@
 import type { Activity } from "../types";
 import categories from '../data/categories';
-import { use, useMemo, type Dispatch } from "react";
+import { useMemo, type Dispatch } from "react";
 import { Pen, Trash } from "lucide-react";
 
 
